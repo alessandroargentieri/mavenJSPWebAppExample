@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">-->
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">    
+    <jsp-config>
+     <jsp-property-group>
+        <url-pattern>*.jsp </url-pattern>
+        <url-pattern>*.jspf </url-pattern>
+        <page-encoding>UTF-8</page-encoding>
+        <scripting-invalid>true</scripting-invalid>
+        <include-prelude>/template/prelude.jsp</include-prelude>
+        <include-coda> /template/coda.jsp</include-coda>
+        <default-content-type>text/html</default-content-type>
+       <!-- <trim-directive-whitespace>true</trim-directive-whitespace>-->
+     </jsp-property-group>
+   </jsp-config>
+    
+    
+    
+    <servlet>
+        <servlet-name>myFirstServlet</servlet-name>
+        <servlet-class>alex.mawashi.telco.FirstServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>myFirstServlet</servlet-name>
+        <url-pattern>/getFirstServlet</url-pattern>
+        <url-pattern>/gimmeFirstServlet</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+</web-app>
