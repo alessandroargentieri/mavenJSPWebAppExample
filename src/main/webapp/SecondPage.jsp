@@ -29,6 +29,9 @@
               out.append("<p>Richiesta effettuata tramite forward da: " + Who + "</p>");
 	   }
 	%>
+        <p> Provo a visualizzare il parametro della Servlet: 
+            <%= request.getParameter("setAttributeAndForward")%>
+        </p>
         
     </body>
 </html>

@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(name = "SecondServlet", urlPatterns = {"/gimmeSecondServlet"})
+@WebServlet(name = "SecondServlet", urlPatterns = {"/gimmeSecondServlet"}) // /
 public class SecondServlet extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)

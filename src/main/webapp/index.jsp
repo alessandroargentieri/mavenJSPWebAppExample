@@ -50,6 +50,7 @@
         <p> href diretto ad una Servlet che è mappata con l'annotation @WebServlet </p>
         <p> <a href="gimmeSecondServlet">Go to SecondServlet</a> </p>
         
+        
         <p> from che invia un parametro via post a ThirdPage.jsp</p>
         <form action="ThirdPage.jsp" method="post">
             <input type="text" name="myparam"/>

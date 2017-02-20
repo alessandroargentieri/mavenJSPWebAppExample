@@ -23,6 +23,13 @@
         <p> Visualizzo il parametro inviato dal form con l'Expression Language </p>
         ${param.myparam} <br/>
         ${"Hello man!"}
+        
+        <p> Parametro della request dall servlet: <%= request.getParameter("redirectToJSP") %> è perso dunque </p>
+        <p> Parametro di sessione, invece rimane: <%=session.getAttribute("maracuia")%> </p>
+        <% request.setAttribute("michael", "Mi chiamo Michael"); %>
+        <p> Attributo (non parametro) richiesta letto con EL: ${requestScope["michael"]}!!! </p>
+        <p> Parametro richiesta letto con EL: ${param.zucchemberg}</p>
+        <p> Parametro richiesta letto con Scriptlet: <%= request.getParameter("zucchemberg") %> </p>
             
         
     </body>
